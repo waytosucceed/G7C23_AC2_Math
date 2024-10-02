@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Reset and base styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Work Sans", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.6;
+        background-color: #f0f3f5; /* Light gray */
+        color: #333; /* Dark gray */
+        margin: 0;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #bbe9ff; /* Light blue */
+        /* padding: 20px; */
+      }
+
+      .header{
+  height:5%;
+  width:100%
+}
+
+      .company-logo {
+        height: 100%;
+      }
+
+      .content-container {
+        margin-top: 1rem;
+        width: 100%;
+        max-width: 1100px;
+        background-color: #ffffff; /* White */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px; /* Rounded corners */
+
+        img {
+          /* max-width: 100%; */
+          height: 300px;
+          display: block;
+          margin: 1rem auto;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .lesson-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #333; /* Dark gray */
+        margin-bottom: 1rem;
+        text-align: center;
+        text-decoration: underline; /* Underline style */
+      }
+
+      .probing-question {
+        margin-top: 1.5rem;
+        background-color: #f0f8ff; /* Light blue */
+        padding: 10px;
+        border-radius: 8px;
+      }
+
+      .probing-question div {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #444; /* Dark gray */
+        margin-bottom: 5px;
+      }
+
+      .probing-question p {
+        color: #666; /* Medium gray */
+      }
+
+      h2,
+      h3,
+      h4 {
+        color: #333; /* Dark gray */
+        margin-top: 1.5rem;
+        font-weight: bold; /* Bold font for all headings */
+      }
+
+      .learn-about {
+        background-color: palegreen;
+        border-radius: 1rem;
+        text-align: left;
+        margin: 1rem;
+        padding: 1rem 0;
+        li {
+          list-style-position: inside;
+          padding-left: 1rem;
+        }
+      }
+
+      p,
+      li {
+        color: #555; /* Medium gray */
+        font-size: 1.4rem;
+      }
+
+      ol,
+      ul {
+        margin-bottom: 1.5rem;
+        padding-left: 20px;
+      }
+
+      hr {
+        border: none; /* Remove default border */
+        height: 2px; /* Set the height of the horizontal rule */
+        background-color: palevioletred; /* Color of the rule */
+      }
+      @media (max-width: 768px) {
+        .company-logo {
+          height: 75%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="background-color:white;width:100%; box-shadow:5px 5px 10px rgb(0, 0, 0);  padding-bottom:10px;">
+        <img src="assests/logo/Logo_last.png" width="5%" style="float:left; margin-top:1.5%;" class="img-responsive">
+        <span> <img src="assests/logo/header.png" width="30%" height="80%" class="img-responsive"></span>
+      </div>
+
+      <div class="content-container">
+        <div class="lesson-title">Triangles</div>
+
+        <div class="lesson-content">
+          <div>
+            <h3><u>Triangle</u></h3>
+            <p>
+              A triangle is a simple closed curve made of three line segments. It has three vertices, three sides and three angles.
+              <img src="./assests/images/1.jpg" alt="">
+              Here is ΔABC.
+ 
+            <br><br>Sides = AB, BC, CA 
+            <br>Angles = ∠BAC, ∠ABC, ∠BCA 
+            <br>Vertices = A, B, C
+            <br><br>
+            The side opposite to the vertex A = BC
+            <br>The side opposite to the vertex C = AB
+            <br>The side opposite to the vertex B = AC
+
+
+            </p>
+            
+            <h3><u>MEDIANS OF A TRIANGLE:</u></h3>
+            <p>
+              <b>
+                A triangle's vertex and the opposite side's midpoint are connected by a median. 
+                <br><br>
+                The triangle's median is the line segment AD that connects the middle of BC to its opposing vertex, A.
+
+              </b>
+              <img src="./assests/images/2.jpg" alt="">
+            </p>
+            <h3><u>ALTITUDES OF A TRIANGLE:</u></h3>
+            <p>
+              One endpoint of an altitude is located at the triangle's vertex, while the other endpoint is on the line that contains the opposite side. One can draw an altitude across each vertex.
+              <br><br>
+              The height is given by the line segment that starts from A, comes straight down to BC, and is perpendicular to BC. The triangle's altitude is represented by this line segment AE.<br>PC perpendicular on line AB and QB perpendicular on line AC.
+              <img src="./assests/images/3.jpg" alt="">
+            </p>
+           <h3><u>Types of Triangles</u></h3>
+            <p>
+              <b>There are two general categories into which triangles can be divided:</b>
+              <ul>
+                <li>Triangles with respect to side lengths</li>
+                <li>Triangles based on their interior angles</li>
+              </ul>
+              <br>
+              <b>Types of Triangles Based on Sides</b>
+              <br>
+              The triangles are divided into the following types based on side lengths:
+              <br>
+              <ul>
+                <li><b>Equilateral Triangle</b>: All of the side lengths of an equilateral triangle are equal. All of the side lengths of an equilateral triangle are equal. Each interior angle in this case will be 60 degrees in measure. Equilateral triangles are also called equiangular triangles because they have equal angles. An equilateral triangle is depicted in the illustration below.
+                  <img src="./assests/images/4.jpg" alt="">
+                </li>
+                <li>
+                  <b>Isosceles triangle</b>: The lengths of two of the three sides in an isosceles triangle are equal. So, the angles opposite the equal sides are equal to each other. To put it another way, the two sides and two angles of an isosceles triangle are equal. An example of an isosceles triangle is shown in the figure below.
+                  <img src="./assests/images/5.jpg" alt="">
+                </li>
+                <li>
+                  <b>Scalene triangle</b>: It has side lengths of various measurements. In such a triangle, no two sides will be the same length. In a scalene triangle, all interior angles are different. The figure below depicts a scalene triangle. You can see that none of the sides are equal in length.
+                  <img src="./assests/images/6.jpg" alt="">
+                </li>
+              </ul>
+              </p>
+            <P>
+              <b>Types of Triangles Based on Angles</b><br><br>
+              Triangles are categorised into the following various types according to their angles:
+              <ul>
+                <li><b>Acute Triangle</b>: An acute triangle is one in which all three interior angles are acute. An acute-angled triangle is one with all internal angles smaller than 90 degrees. The figure below depicts an acute triangle.
+                  <img src="./assests/images/7.jpg" alt="">
+                </li>
+                <li><b>Right Triangle</b>: A right triangle is a triangle with one of its angles at 90 degrees. In a right-angled triangle, the hypotenuse is the longest side that is opposite the right angle (90 degrees). You may come across triangle types with combined names, such as right isosceles triangles, however this merely means that the triangle has two equal sides and one of the internal angles is 90 degrees. The figure below depicts a right triangle.
+                  <img src="./assests/images/8.jpg" alt="">
+                </li>
+                <li><b>Obtuse Triangle</b>: Obtuse triangles are ones with one of the three interior angles measuring more than 90 degrees. In other terms, an obtuse angled triangle is one in which one of the angles is obtuse. The figure below depicts an obtuse triangle.
+                  <img src="./assests/images/9.jpg" alt="">
+                </li>
+              </ul>
+              <br>
+              <b>Points to remember:</b><br><br>
+              Here are a few points to consider while studying various types of triangles:
+              <ul>
+                <li>In an equilateral triangle, each of the three internal angles is 60°.</li>
+                <li>The three interior angles of a triangle always sum up to 180°</li>
+                <li>All triangles have two acute angles.</li>
+               
+              </ul>
+            </P>
+            <h3><u>Triangle and its Properties</u></h3>
+            <p>
+              The properties of a triangle help us to identify relationships between different sides and angles of a triangle. Some of the important properties of a triangle are listed below.
+              <br><br><b>Angle Sum Property</b><br><br>
+              As per the angle sum property, the sum of the three interior angles of a triangle is always 180°.
+              <img src="./assests/images/10.jpg" alt="" width="70%" style="height: 50%;">
+              In the given triangles, ∠A + ∠B + ∠C = 180° and ∠P + ∠Q + ∠R = 180°
+            </p>
+            <h3><u>Triangle Inequality Property</u></h3>
+            <p>
+              As per the triangle inequality property the sum of the length of the two sides of a triangle is greater than the third side.
+              <img src="./assests/images/11.jpg" alt=""  width="70%" style="height: 50%;">
+              Observe the figure given above which shows △ABC which represents the Triangle inequality property. If a = 4 units, b = 6 units, and c = 3 units, let us verify the triangle inequality property as follows:
+              <ul>
+                <li>a + b > c ( 4 + 6 > 3)</li>
+                <li>c + a > b (3 + 4 > 6)</li>
+                <li>c + b > a (3 + 6 > 4)</li>
+              </ul>
+            </p>
+            <h3><u>Side Opposite the Greater Angle is the Longest Side</u></h3>
+            <p>
+              In order to understand this property which says that the side opposite the greater angle is the longest side, observe the triangle given below. In this triangle, ∠B is the greatest angle. Thus, the side AC is the longest side.
+              <img src="./assests/images/12.jpg" alt="" width="70%" style="height: 50%;">
+            </p>
+            <h3><u>Exterior Angle Property</u></h3>
+            <p>
+              As per the exterior angle property, the exterior angle of a triangle is always equal to the sum of the interior opposite angles. In the given triangle, ∠e = ∠a + ∠b
+<br>It should be noted that 3 exterior angles can be extended in a triangle and all these exterior angles add up to 360°.
+
+            </p>
+            <img src="./assests/images/13.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
